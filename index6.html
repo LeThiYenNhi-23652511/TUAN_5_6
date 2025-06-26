@@ -6,39 +6,34 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        height: 150vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(5, 227, 243)
-        ;
-        font-style: italic;
-    }
     .container{
         display: flex;
         align-items: center;
         border-radius: 20px;
         background-color: pink;
-        flex-direction: column;
+        flex-direction: row-reverse;
+    }
+    body{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(150, 255, 194)
+        ;
+        font-style: italic;
     }
     img{
         border-radius: 20px;
         height: 350px;
         width: 350px;
-    
     }
 </style>
-
 <body>
     <div class="container">
-        <img src="https://picsum.photos/200/300" alt="anh">
-        <div id="profile"> 
-            <p>Yến Nhi</p>
-            <p>Sinh viên Đh Công Nghiệp Tp Hồ Chí Minh</p>
+        <img src="https://picsum.photos/200/300"  width = "200">
+        <div class="figcaption">
+           <p>Đây là ảnh đại diện của tôi</p>
         </div>
-        
-        
     </div>
 </body>
 </html>
