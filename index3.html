@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    
+    body{
+        font-family: sans-serif;
+        background: rgb(222, 222, 255);
+        padding: 40px;
+    }
+    h1{
+        text-align: center;
+        background-color: cornflowerblue;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: auto;
+        gap: 10px;
+        max-width: 800px;
+        margin: 10px;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 100px repeat(5, 1fr);
+        background: white;
+        border: 1px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .cell{
+        padding: 10px;
+        border-left: 1px;
+        text-align: center;
+        font-size: larger;
+    }
+    .cell:first-child{
+        font-weight: bold;
+        background-color: lightcoral;
+        border-left: none;
+    }
+    .header{
+        background-color: aqua;
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+    
+
+</style>
+<body>
+    <h1>Thời khóa biểu</h1>
+    <div class="container"></div>
+        <div class="row header">
+          <div class="cell">Tiết</div>
+          <div class="cell">Thứ 2</div>
+          <div class="cell">Thứ 3</div>
+          <div class="cell">Thứ 4</div>
+          <div class="cell">Thứ 5</div>
+        </div>
+       <div class="row">
+          <div class="cell">Tiết 1</div>
+          <div class="cell">Toán</div>
+          <div class="cell">Lý</div>
+          <div class="cell">Hóa</div>
+          <div class="cell">Sinh</div>
+       </div>
+       <div class="row">
+        <div class="cell">Tiết 2</div>
+        <div class="cell">văn</div>
+        <div class="cell">Sử</div>
+        <div class="cell">Địa</div>
+        <div class="cell">Anh</div>
+     </div>
+    </div>
+</body>
+</html>
+
