@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 900px;
+        margin: 10px;
+        padding: 10px;
+    }
+    menu li a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        padding: 10px;
+
+    }
+    menu li a::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        left: 5px;
+        bottom: 5px;
+        background-color: bisque;
+    }
+    menu li a:hover{
+        color: aquamarine;
+    }
+    menu li a :hover::after{
+        width: 10px;
+    }
+    body{
+        margin: 10px;
+        font-family: sans-serif;
+        background: beige;
+    }
+    h2{
+        text-align: center;
+        background-color: rgb(223, 234, 255);
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+</style>
+<body>
+
+    <h2>Các liên kết của tôi</h2>
+    <nav>
+        <ul class="menu">
+            <li><a href="trang-chu.html">Đi đến Trang Chủ</a></li>
+            <li><a href="https://www.google.com" target="_blank">Tìm kiếm trên Google</a></li>
+            <li><a href="mailto:emailcuaban@example.com">Gửi email cho tôi</a></li>
+            <li><a href="tel:+84901234567">Gọi số này</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
